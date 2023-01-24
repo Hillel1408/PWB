@@ -1,0 +1,183 @@
+@import 'mixins';
+@import 'fonts';
+@import 'icons';
+
+$minWidth: 375px;
+$maxWidth: 1920;
+$maxWidthContainer: 1800;
+$md1: $maxWidthContainer + 40;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 575.98;
+
+$fontFamily: 'Acrom', sans-serif;
+
+@import 'null';
+
+html {
+    scroll-behavior: smooth;
+}
+body.lock {
+    overflow: hidden !important;
+}
+footer {
+    margin-top: auto;
+}
+main {
+    min-height: 100%;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    @media (max-width: $md1+px) {
+        max-width: none;
+        padding: 0 20px;
+    }
+}
+.btn {
+    @include fontText(Acrom, 18px, 700);
+    line-height: 21 / 18 * 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease 0s;
+    background-color: transparent;
+    font-size: 18px;
+}
+.title {
+    @include adaptiv-font(55, 22, 1);
+    font-family: Acrom;
+    font-weight: 400;
+    line-height: 71 / 55 * 100%;
+    color: #303030;
+    @media (max-width: 700px) {
+        font-weight: 700;
+    }
+}
+.text {
+    @include adaptiv-font(18, 16, 1);
+    font-family: Montserrat;
+    font-weight: 400;
+    line-height: 25 / 18 * 100%;
+    color: #303030;
+}
+input,
+select {
+    @include adaptiv-font(18, 16, 1);
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 24 / 18 * 100%;
+    color: #303030;
+    border: 1px solid #c8425f;
+    &:focus {
+        border: 1px solid #c8425f;
+        box-shadow: 0px 0px 4px #c8425f;
+    }
+    &:hover {
+        border: 1px solid #c8425f;
+    }
+    &::placeholder {
+        color: #aeaeae;
+        font-weight: 400;
+    }
+}
+.block {
+    position: relative;
+}
+
+.real-radio-btn {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.custom-radio-btn {
+    position: relative;
+    display: inline-block;
+    min-width: 16px;
+    min-height: 16px;
+    background: #ffffff;
+    border: 1px solid #c8425f;
+    border-radius: 50%;
+    vertical-align: text-top;
+    margin-right: 14px;
+}
+.custom-radio-btn::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #c8425f;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease-in;
+}
+.real-radio-btn:checked + .custom-radio-btn::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-checkbox + label::before {
+    content: '';
+    display: inline-block;
+    min-width: 16px;
+    min-height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #aeaeae;
+    border-radius: 2px;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.custom-checkbox:checked + label::before {
+    border-color: #c8425f;
+    background-color: #c8425f;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.slick-arrow {
+    &::before {
+        transition: border-color 0.3s ease 0s;
+    }
+    @media (any-hover: hover) {
+        &:hover::before {
+            border-color: #c8425f !important;
+        }
+    }
+}
+
+@import './sections/header';
+@import './sections/slider';
+@import './sections/cake-collection';
+@import './sections/bestsellers';
+@import './sections/bakery-team';
+@import './sections/address';
+@import './sections/footer';
+@import './sections/cake-gallery';
+@import './sections/cake-info';
+@import './sections/order';
+@import './sections/form';
+@import './sections/modal';

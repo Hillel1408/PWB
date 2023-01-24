@@ -1,0 +1,101 @@
+.bestsellers {
+    background-color: white;
+    cursor: default;
+    &__inner {
+        max-width: 1540px;
+        margin: 0 auto;
+        position: relative;
+        @include adaptiv-value(padding-bottom, 100, 33, 1);
+        @media (max-width: 1580px) {
+            max-width: 1580px;
+        }
+    }
+    &__title {
+        text-align: center;
+        @media (max-width: 700px) {
+            text-align: left;
+        }
+        @include adaptiv-value(margin-bottom, 52, 20, 1);
+    }
+    &__item {
+        margin: 10px;
+        @media (max-width: 1620px) {
+            margin: 0;
+        }
+    }
+    &__columns {
+        display: block;
+        @media (max-width: 1620px) {
+            display: flex;
+        }
+    }
+    & .cake-collection__item-link::before {
+        left: 60px;
+    }
+}
+.bestsellers__columns .slick {
+    &-list {
+        margin: 0 -10px;
+    }
+    &-track {
+        display: flex;
+        overflow: auto;
+    }
+    &-arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 0;
+        background-color: transparent;
+        z-index: 1;
+        &::before {
+            content: '';
+            border: solid;
+            border-color: #303030;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 5px;
+            transform: rotate(135deg);
+            border-radius: 2px;
+        }
+    }
+    &-next {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease 0s;
+        right: -25px;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: rotate(180deg) scale(1.2);
+            }
+        }
+    }
+    &-prev {
+        transition: transform 0.3s ease 0s;
+        left: -25px;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &-dots {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        display: none !important;
+        justify-content: center;
+        & button {
+            width: 8px;
+            height: 8px;
+            background: #303030;
+            font-size: 0;
+            margin: 0 8px;
+        }
+    }
+    &-active > button {
+        width: 16px;
+        height: 16px;
+        background-color: transparent;
+        border: 2px solid #303030;
+    }
+}

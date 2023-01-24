@@ -1,0 +1,271 @@
+<section class="form">
+    <div class="form__tabs">
+        <ul class="form__tabs-list">
+            <li class="form__tabs-item _active" data-id="1">Work in PWB</li>
+            <li class="form__tabs-item" data-id="2">Personal data</li>
+            <li class="form__tabs-item" data-id="3">Education</li>
+        </ul>
+    </div>
+    <div class="_container">
+        <div class="form__job _active" data-id="1">
+            <h1 class="form__job-title">Job Application form</h1>
+            <p class="form__job-text">What vacancy are you interested in?</p>
+            <form action="#" method="get">
+                <div class="form__job-vacancy">
+                    <div class="form__job-check">
+                        <input
+                            id="checkbox1"
+                            type="checkbox"
+                            name="vacancy"
+                            value="Certified pastry chef"
+                            class="custom-checkbox"
+                        /><label class="text form__job-checkbox" for="checkbox1"
+                            >Certified pastry chef</label
+                        >
+                    </div>
+                    <div class="form__job-check">
+                        <input
+                            id="checkbox2"
+                            type="checkbox"
+                            name="vacancy"
+                            value="Baker"
+                            class="custom-checkbox"
+                        /><label class="text form__job-checkbox" for="checkbox2"
+                            >Baker</label
+                        >
+                    </div>
+                    <div class="form__job-check">
+                        <input
+                            id="checkbox3"
+                            type="checkbox"
+                            name="vacancy"
+                            value="Pastry chef assistant"
+                            class="custom-checkbox"
+                        /><label class="text form__job-checkbox" for="checkbox3"
+                            >Pastry chef assistant</label
+                        >
+                    </div>
+                    <div class="form__job-check">
+                        <input
+                            id="checkbox4"
+                            type="checkbox"
+                            name="vacancy"
+                            value="Barista"
+                            class="custom-checkbox"
+                        /><label class="text form__job-checkbox" for="checkbox4"
+                            >Barista</label
+                        >
+                    </div>
+                    <div class="form__job-check">
+                        <input
+                            id="checkbox5"
+                            type="checkbox"
+                            name="vacancy"
+                            value="Builder/ general laborer"
+                            class="custom-checkbox"
+                        /><label class="text form__job-checkbox" for="checkbox5"
+                            >Builder/ general laborer</label
+                        >
+                    </div>
+                    <div class="form__job-check">
+                        <input
+                            id="checkbox6"
+                            type="checkbox"
+                            name="vacancy"
+                            value="Dishwasher"
+                            class="custom-checkbox"
+                        /><label class="text form__job-checkbox" for="checkbox6"
+                            >Dishwasher</label
+                        >
+                    </div>
+                    <div class="form__job-check">
+                        <input
+                            id="checkbox7"
+                            type="checkbox"
+                            name="vacancy"
+                            value="Sales manager"
+                            class="custom-checkbox"
+                        /><label class="text form__job-checkbox" for="checkbox7"
+                            >Sales manager</label
+                        >
+                    </div>
+                </div>
+                <button
+                    style="width: 100%; margin-left: 0"
+                    class="btn form__job-btn_next"
+                    type="submit"
+                >
+                    I want to work here!
+                </button>
+            </form>
+        </div>
+        <div class="form__job _active" data-id="2" style="max-width: 760px">
+            <form action="#" method="post">
+                <div class="form__job-inner">
+                    <h2 class="form__job-subtitle">Personal data</h2>
+                    <div class="form__job-block">
+                        <input
+                            class="form__job-inp"
+                            type="text"
+                            name="Name"
+                            required
+                            placeholder="Name, Surname"
+                        />
+                        <input
+                            class="form__job-inp"
+                            type="text"
+                            name="Date of birth"
+                            required
+                            placeholder="Date of birth"
+                        />
+                        <input
+                            class="form__job-inp"
+                            type="text"
+                            name="Nationality"
+                            required
+                            placeholder="Nationality"
+                        />
+                        <input
+                            class="form__job-inp"
+                            type="text"
+                            name="Place of birth"
+                            required
+                            placeholder="Place of birth"
+                        />
+                    </div>
+                    <input
+                        class="form__job-inp"
+                        type="tel"
+                        name="Phone number"
+                        required
+                        placeholder="Phone number"
+                    />
+                </div>
+                <div class="form__job-inner">
+                    <h2 class="form__job-subtitle">Health information</h2>
+                    <input
+                        class="form__job-inp"
+                        type="text"
+                        name="Health Status"
+                        required
+                        placeholder="Health Status"
+                    />
+                    <input
+                        class="form__job-inp"
+                        type="text"
+                        name="Health restrictions"
+                        required
+                        placeholder="Health restrictions"
+                    />
+                </div>
+                <div class="form__job-marital">
+                    <h2 class="form__job-subtitle">Marital status</h2>
+                    <label class="form__job-lb"
+                        ><input
+                            checked
+                            type="radio"
+                            name="Marital status"
+                            required
+                            value="Married"
+                            class="real-radio-btn"
+                        /><span class="custom-radio-btn"></span>Married</label
+                    >
+                    <label class="form__job-lb"
+                        ><input
+                            type="radio"
+                            name="Marital status"
+                            value="Singe"
+                            class="real-radio-btn"
+                        /><span class="custom-radio-btn"></span>Singe</label
+                    >
+                    <div class="form__job-block">
+                        <input
+                            class="form__job-inp"
+                            type="text"
+                            name="Children"
+                            required
+                            placeholder="Children"
+                        />
+                        <input
+                            class="form__job-inp"
+                            type="text"
+                            name="Children younger than 7"
+                            required
+                            placeholder="Children younger than 7"
+                        />
+                    </div>
+                </div>
+                <div class="form__job-wrapper">
+                    <a class="form__job-back" href="#">Back</a>
+                    <button class="btn form__job-btn_next" type="submit">
+                        Next
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="form__job _active" data-id="3" style="max-width: 760px">
+            <form action="#" method="post">
+                <div class="form__job-inner">
+                    <h2 class="form__job-subtitle">English proficiency</h2>
+                    <select class="form__job-inp" name="English proficiency">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Elementary">Elementary</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Upper intermediate">
+                            Upper intermediate
+                        </option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Proficiency">Proficiency</option>
+                    </select>
+                </div>
+                <div class="form__job-inner">
+                    <h2 class="form__job-subtitle">Education</h2>
+                    <input
+                        class="form__job-inp"
+                        type="text"
+                        name="Education"
+                        required
+                        placeholder="Education"
+                    />
+                </div>
+                <div class="form__job-inner">
+                    <h2 class="form__job-subtitle">Work experience</h2>
+                    <span class="form__job-subtext"
+                        >Indicate your employment time intervals (ex. July 2012-
+                        November 2016)</span
+                    >
+                    <textarea
+                        class="form__job-inp form__job-textarea"
+                        required
+                        placeholder="Work"
+                    ></textarea>
+                </div>
+                <div class="form__job-inner">
+                    <h2 class="form__job-subtitle">Your main achievements</h2>
+                    <input
+                        class="form__job-inp"
+                        type="text"
+                        name="Achievements"
+                        required
+                        placeholder="Achievements"
+                    />
+                </div>
+                <div class="form__job-inner">
+                    <h2 class="form__job-subtitle">Portfolio (link)</h2>
+                    <input
+                        class="form__job-inp"
+                        type="text"
+                        name="Link"
+                        placeholder="Link"
+                    />
+                </div>
+                <div class="form__job-wrapper">
+                    <a class="form__job-back">Back</a>
+                    <button class="btn form__job-btn_next" type="submit">
+                        Submit!
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

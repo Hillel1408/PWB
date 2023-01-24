@@ -1,0 +1,164 @@
+.form {
+    border-top: 1px solid #e7e7e7;
+    margin-top: 153px;
+    cursor: default;
+    @media (max-width: 920px) {
+        margin-top: 91px;
+    }
+    &__tabs {
+        background-color: #fafafb;
+        @media (max-width: 700px) {
+            overflow: auto;
+        }
+        &-list {
+            @include adaptiv-value(padding-top, 25, 20, 1);
+            @include adaptiv-value(padding-bottom, 25, 20, 1);
+            display: flex;
+            justify-content: space-evenly;
+            @media (max-width: 700px) {
+                width: 700px;
+            }
+        }
+        &-item {
+            @include adaptiv-font(22, 18, 1);
+            font-family: Acrom;
+            font-weight: 700;
+            line-height: 28 / 22 * 100%;
+            color: #aeaeae;
+            &._active {
+                color: #c8425f;
+            }
+            @media (max-width: 700px) {
+                width: 33.33%;
+                text-align: center;
+            }
+        }
+    }
+    &__job {
+        padding: 40px 0 107px 0;
+        max-width: 500px;
+        margin: 0 auto;
+        display: none;
+        &._active {
+            display: block;
+        }
+        &-wrapper {
+            @media (max-width: 400px) {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+        &-check {
+            display: flex;
+            align-items: center;
+            margin-bottom: 26px;
+        }
+        &-title {
+            @include fontText(Acrom, 35px, 700);
+            line-height: 45 / 35 * 100%;
+            color: #303030;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        &-text {
+            @include fontText(Acrom, 22px, 400);
+            line-height: 28 / 22 * 100%;
+            color: #303030;
+            margin-bottom: 33px;
+            text-align: center;
+        }
+        &-checkbox {
+            @include fontText(Acrom, 18px, 400);
+            line-height: 21 / 18 * 100%;
+            color: #aeaeae;
+            display: block;
+            cursor: pointer;
+        }
+        &-vacancy {
+            & input {
+                margin-right: 12px;
+            }
+        }
+        &-btn {
+            &_next {
+                padding: 12.5px 0;
+                width: 180px;
+                background-color: #c8425f;
+                color: white;
+                margin-left: 20px;
+                border-radius: 8px;
+                @media (any-hover: hover) {
+                    transition: box-shadow 0.3s ease 0s;
+                    &:hover {
+                        box-shadow: 10px 15px 22px -10px rgba(200, 66, 95, 0.62);
+                    }
+                }
+                @media (max-width: 400px) {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &-subtitle {
+            @include fontText(Acrom, 22px, 400);
+            line-height: 28 / 22 * 100%;
+            color: #303030;
+            @include adaptiv-value(margin-bottom, 20, 16, 1);
+        }
+        &-inp {
+            width: 100%;
+            border: 1px solid #e7e7e7;
+            border-radius: 8px;
+            padding: 17px;
+            line-height: 22 / 18 * 100%;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        &-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+            @media (max-width: 500px) {
+                grid-template-columns: 1fr;
+            }
+        }
+        &-inner {
+            margin-bottom: 20px;
+        }
+        &-marital {
+            margin-bottom: 40px;
+            & input {
+                margin-right: 14px;
+            }
+        }
+        &-lb {
+            @include fontText(Acrom, 18px, 400);
+            line-height: 22 / 18 * 100%;
+            color: #303030;
+            margin-right: 23px;
+            margin-bottom: 20px;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        &-back {
+            @include fontText(Acrom, 18px, 400);
+            line-height: 22 / 18 * 100%;
+            color: #c8425f;
+            @media (max-width: 400px) {
+                text-align: center;
+            }
+        }
+        &-textarea {
+            height: 120px;
+        }
+        &-subtext {
+            display: block;
+            margin-bottom: 20px;
+            @include fontText(Montserrat, 13px, 400);
+            line-height: 18 / 13 * 100%;
+            color: #aeaeae;
+        }
+    }
+}

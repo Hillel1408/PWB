@@ -1,0 +1,219 @@
+<section class="order">
+    <div class="order__info">
+        <div class="order__info-block">
+            <h1 class="order__info-title">Order number #00567</h1>
+            <div class="order__info-items">
+                <div class="order__info-item">
+                    <div class="order__info-img">
+                        <img src="./img/order/1.jpg" alt="" />
+                    </div>
+                    <div class="order__info-cake">
+                        <a href="">Red Velvet cake</a>
+                        <span class="order__info-text"
+                            >20 servings 7,9lb cake 5"/7" $43</span
+                        >
+                        <span class="order__info-price_2">43</span>
+                    </div>
+                    <div>
+                        <div class="order__info-plusminus">
+                            <span
+                                class="order__info-minus"
+                                onclick="basket(event)"
+                                >-</span
+                            >
+                            <b class="order__info-count">1</b>
+                            <span
+                                class="order__info-plus"
+                                onclick="basket(event)"
+                                >+</span
+                            >
+                        </div>
+                        <a class="order__info-delete" onclick="basketDel(event)"
+                            >Delete</a
+                        >
+                    </div>
+                </div>
+                <div class="order__info-item">
+                    <div class="order__info-img">
+                        <img src="./img/order/1.jpg" alt="" />
+                    </div>
+                    <div class="order__info-cake">
+                        <a href="">Red Velvet cake</a>
+                        <span class="order__info-text"
+                            >20 servings 7,9lb cake 5"/7" $65</span
+                        >
+                        <span class="order__info-price_2">65</span>
+                    </div>
+                    <div>
+                        <div class="order__info-plusminus">
+                            <span
+                                class="order__info-minus"
+                                onclick="basket(event)"
+                                >-</span
+                            >
+                            <b class="order__info-count">1</b>
+                            <span
+                                class="order__info-plus"
+                                onclick="basket(event)"
+                                >+</span
+                            >
+                        </div>
+                        <a class="order__info-delete" onclick="basketDel(event)"
+                            >Delete</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="order__info-total">
+                <span>Total:</span>
+                <span class="order__info-price">108</span>
+            </div>
+            <button class="btn order__info-btn">Add more +</button>
+        </div>
+    </div>
+    <div class="order__data">
+        <div class="order__data-block">
+            <a class="order__data-back" href="#">Back</a>
+            <form action="#" method="post">
+                <div class="order__data-delivery-date">
+                    <h2 class="order__data-title">Delivery data</h2>
+                    <input
+                        required
+                        class="order__data-inp"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                    />
+                    <input
+                        required
+                        class="order__data-inp"
+                        type="tel"
+                        name="phone"
+                        placeholder="Phone"
+                    />
+                    <input
+                        class="order__data-inp"
+                        type="email"
+                        name="email"
+                        placeholder="Email"
+                    />
+                </div>
+                <div class="order__data-delivery-options">
+                    <h2 class="order__data-title">Delivery options</h2>
+                    <div class="order__data-radio">
+                        <label class="order__data-lb"
+                            ><input
+                                checked
+                                type="radio"
+                                name="Delivery Options"
+                                required
+                                value="Pick-up from Main Bakery - 2872 Coney Island ave Brooklyn, NY"
+                                class="real-radio-btn"
+                            /><span class="custom-radio-btn"></span>Pick-up from
+                            Main Bakery - 2872 Coney Island ave Brooklyn,
+                            NY</label
+                        >
+                    </div>
+                    <div class="order__data-radio">
+                        <label class="order__data-lb"
+                            ><input
+                                type="radio"
+                                name="Delivery Options"
+                                value="Pick-up from New Bakery - 3745 Avenue, 11215, Brooklyn, NY"
+                                class="real-radio-btn"
+                            /><span class="custom-radio-btn"></span>Pick-up from
+                            New Bakery - 3745 Avenue, 11215, Brooklyn, NY</label
+                        >
+                    </div>
+                    <div class="order__data-radio">
+                        <label class="order__data-lb"
+                            ><input
+                                type="radio"
+                                name="Delivery Options"
+                                value="Standard Delivery to address"
+                                class="real-radio-btn"
+                            /><span class="custom-radio-btn"></span>Standard
+                            Delivery to address</label
+                        >
+                    </div>
+                </div>
+                <div class="order__data-delivery-adress">
+                    <h2 class="order__data-title">Delivery adress</h2>
+                    <input
+                        class="order__data-inp"
+                        type="text"
+                        name="ZIP/Postal Code"
+                        placeholder="ZIP/Postal Code"
+                    />
+                    <input
+                        class="order__data-inp"
+                        type="text"
+                        name="adress"
+                        placeholder="Adress"
+                    />
+                    <div class="order__data-house">
+                        <input
+                            class="order__data-inp"
+                            type="text"
+                            name="house-number"
+                            placeholder="House-number, building, apartment/office"
+                        />
+                        <!--<input class="order__data-inp" type="text" name="house-number" placeholder="House number">
+						<input class="order__data-inp" type="text" name="building" placeholder="Building">
+						<input class="order__data-inp" type="text" name="apartment/office" placeholder="Apartment/Office">-->
+                    </div>
+                </div>
+                <div class="order__data-delivery-date">
+                    <h2 class="order__data-title">Date & Time</h2>
+                    <div class="order__data-date">
+                        <input
+                            required
+                            class="order__data-inp"
+                            type="date"
+                            name="date"
+                        />
+                        <div class="order__data-delivery-time">
+                            <div class="order__data-radio">
+                                <label class="order__data-lb"
+                                    ><input
+                                        checked
+                                        type="radio"
+                                        name="Delivery time"
+                                        value="9 a.m. - 4 p.m."
+                                        class="real-radio-btn"
+                                    /><span class="custom-radio-btn"></span>9
+                                    a.m. - 4 p.m.</label
+                                >
+                            </div>
+                            <div class="order__data-radio">
+                                <label class="order__data-lb"
+                                    ><input
+                                        type="radio"
+                                        name="Delivery time"
+                                        value="1 p.m. - 8 p.m."
+                                        class="real-radio-btn"
+                                    /><span class="custom-radio-btn"></span>1
+                                    p.m. - 8 p.m.</label
+                                >
+                            </div>
+                        </div>
+                        <!--<input class="order__data-inp" type="time" name="time">-->
+                    </div>
+                </div>
+                <div class="order__data-total">
+                    <span class="order__data-sp">Total:</span>
+                    <span class="order__data-price">108</span>
+                </div>
+                <p class="text order__data-text">
+                    Please make a deposit or full payment for custom cake at
+                    least 48 hours from date desired. For Rush Orders, please
+                    contact our manager
+                    <a href="tel:+1646-968-0819">+1 646-968-0819</a>
+                </p>
+                <button type="submit" class="btn order__data-btn">
+                    Checkout
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

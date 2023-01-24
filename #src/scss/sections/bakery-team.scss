@@ -1,0 +1,160 @@
+.bakery-team {
+    background: linear-gradient(
+        129.81deg,
+        #feeae1 -7.31%,
+        #feeadf 38.76%,
+        #f5cdbf 82.29%
+    );
+    cursor: default;
+    &__container {
+        background: url(../img/bakery-team/bg.png);
+    }
+    &__inner {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 1220px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 800px) {
+            flex-direction: column;
+        }
+        @include adaptiv-value(padding-top, 100, 40, 1);
+        @include adaptiv-value(padding-bottom, 100, 40, 1);
+    }
+    &__slider {
+        @include adaptiv-value(width, 400, 271, 1);
+        height: auto;
+        position: relative;
+        @media (max-width: 800px) {
+            margin: 0 auto;
+        }
+    }
+    &__item {
+        overflow: hidden;
+        border-radius: 20px;
+        &-content {
+            background-color: #c8425f;
+            padding: 20px 40px;
+            text-align: center;
+        }
+        &-title {
+            @include fontText(Acrom, 22px, 400);
+            line-height: 28 / 22 * 100%;
+            color: white;
+            margin-bottom: 10px;
+        }
+        & span {
+            @include fontText(Montserrat, 18px, 400);
+            line-height: 25 / 18 * 100%;
+            color: white;
+        }
+        & img {
+            width: 100%;
+            object-fit: cover;
+            @media (max-width: 380px) {
+                height: 250px;
+            }
+        }
+    }
+    &__content {
+        width: 620px;
+        padding-top: 90px;
+        margin-left: 20px;
+        @media (max-width: 800px) {
+            width: 100%;
+            margin-left: 0;
+            padding-top: 48px;
+        }
+        &-title {
+            margin-bottom: 10px;
+        }
+        & span {
+            @include adaptiv-font(22, 18, 1);
+            font-family: Acrom;
+            font-weight: 400;
+            line-height: 28 / 22 * 100%;
+            color: #c8425f;
+            display: block;
+            @include adaptiv-value(margin-bottom, 36, 16, 1);
+        }
+        & p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
+.bakery-team__slider .slick {
+    &-list {
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    &-track {
+        display: flex;
+    }
+    &-arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 0;
+        background-color: transparent;
+        z-index: 1;
+        &::before {
+            content: '';
+            border: solid;
+            border-color: #303030;
+            border-width: 0 4px 4px 0;
+            display: inline-block;
+            padding: 5px;
+            transform: rotate(135deg);
+            border-radius: 2px;
+        }
+        @media (min-width: 800px) and (max-width: 1300px) {
+            display: none !important;
+        }
+    }
+    &-next {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease 0s;
+        right: -25px;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: rotate(180deg) scale(1.2);
+            }
+        }
+    }
+    &-prev {
+        transition: transform 0.3s ease 0s;
+        left: -25px;
+        @media (any-hover: hover) {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &-dots {
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        & button {
+            width: 8px;
+            height: 8px;
+            background: #303030;
+            font-size: 0;
+            margin: 0 8px;
+        }
+        @media (min-width: 1300px) {
+            display: none !important;
+        }
+        @media (max-width: 800px) {
+            display: none !important;
+        }
+    }
+    &-active > button {
+        width: 16px;
+        height: 16px;
+        background-color: transparent;
+        border: 2px solid #303030;
+    }
+}
