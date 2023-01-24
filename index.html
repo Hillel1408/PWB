@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pastry World Bakery</title>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <!-- <meta name="robots" content="noindex, nofollow"> -->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
+        <meta name="viewport" content="width=device-width" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <div class="_container">
+        <div class="header__inner">
+            <div class="logo header__logo">
+                <a href="/"><img src="./img/header/logo.png" alt="" /></a>
+            </div>
+            <div class="header__nav">
+                <div class="header__nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="header__nav-list">
+                    <li
+                        class="header__nav-item header__nav-item_title header__nav-link"
+                    >
+                        Menu
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="/">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="/#bakery-team"
+                            >About</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="/#address"
+                            >Contacts</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="./cake-gallery.html"
+                            >Cake gallery</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="./form.html"
+                            >Vacancy</a
+                        >
+                    </li>
+                    <li class="header__nav-item">
+                        <ul class="header__nav-ft">
+                            <li
+                                class="header__nav-item header__nav-item_title header__nav-link"
+                            >
+                                Cake gallery
+                            </li>
+                            <li class="header__nav-item">
+                                <a
+                                    class="header__nav-link"
+                                    href="./cake-gallery.html"
+                                    >Custom cakes</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a
+                                    class="header__nav-link"
+                                    href="./cake-gallery.html"
+                                    >Exclusive cakes</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a
+                                    class="header__nav-link"
+                                    href="./cake-gallery.html"
+                                    >Pastries & Deserts</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a
+                                    class="header__nav-link"
+                                    href="./cake-gallery.html"
+                                    >Deserts</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <ul class="header__nav-ft">
+                            <li
+                                class="header__nav-item header__nav-item_title header__nav-link"
+                            >
+                                Contacts
+                            </li>
+                            <li class="header__nav-item">
+                                <a
+                                    class="header__nav-link icon-9"
+                                    href="tel:+1646-968-0819"
+                                    >+1 (646) 968-0819</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a
+                                    class="header__nav-link icon-14"
+                                    href="mailto:info@pastryworldbakery.com"
+                                    >info@pastyworldbakery.com</a
+                                >
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link icon-10"></a
+                                ><a
+                                    href="#"
+                                    class="header__nav-link icon-11"
+                                ></a
+                                ><a
+                                    href="#"
+                                    class="header__nav-link icon-12"
+                                ></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__block">
+                <a class="header__tel" href="tel:+1646-968-0819"
+                    >+1 646-968-0819</a
+                >
+                <a class="btn header__btn popup-link" href="#call"
+                    >One click cake</a
+                >
+                <div class="header__basket">
+                    <a href="order.html" class="icon-1"
+                        ><span class="icon-14"></span
+                    ></a>
+                    <div class="header__basket-small">
+                        <span class="header__basket-small-block"></span>
+                        <span class="header__basket-title">My Order</span>
+                        <div class="header__basket-item">
+                            <div class="order__info-img">
+                                <img src="./img/order/1.jpg" alt="" />
+                            </div>
+                            <div class="order__info-cake">
+                                <a href="">Red Velvet cake</a>
+                                <span class="order__info-text"
+                                    >20 servings 7,9lb cake 5"/7" $43</span
+                                >
+                                <span class="order__info-price_2">43</span>
+                            </div>
+                            <div>
+                                <div class="order__info-plusminus">
+                                    <span class="order__info-minus">-</span>
+                                    <b class="order__info-count">1</b>
+                                    <span class="order__info-plus">+</span>
+                                </div>
+                                <a class="order__info-delete">Delete</a>
+                            </div>
+                        </div>
+                        <div class="header__basket-item">
+                            <div class="order__info-img">
+                                <img src="./img/order/1.jpg" alt="" />
+                            </div>
+                            <div class="order__info-cake">
+                                <a href="">Red Velvet cake</a>
+                                <span class="order__info-text"
+                                    >20 servings 7,9lb cake 5"/7" $65</span
+                                >
+                                <span class="order__info-price_2">65</span>
+                            </div>
+                            <div>
+                                <div class="order__info-plusminus">
+                                    <span class="order__info-minus">-</span>
+                                    <b class="order__info-count">1</b>
+                                    <span class="order__info-plus">+</span>
+                                </div>
+                                <a class="order__info-delete">Delete</a>
+                            </div>
+                        </div>
+                        <div class="header__basket-total">
+                            <span>Total:</span>
+                            <span class="header__basket-price">130</span>
+                        </div>
+                        <button class="btn header__basket-btn">Checkout</button>
+                    </div>
+                    <a href="#" class="icon-2"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main>
+                <section class="slider">
+    <div class="_container slider__container">
+        <div class="slider__inner">
+            <div class="slider__socials">
+                <a href="#">TripAdvisor</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+            <div class="slick">
+                <div class="slider__block">
+                    <div class="slider__content">
+                        <h2 class="slider__title title">
+                            Individually designed cake for every occasion
+                        </h2>
+                        <span>From 100$</span>
+                        <button class="btn slider__btn popup-link" href="#call">
+                            Order now
+                        </button>
+                    </div>
+                    <div class="slider__img">
+                        <img src="./img/slider/group_116.png" alt="" />
+                    </div>
+                </div>
+                <div class="slider__block">
+                    <div class="slider__content">
+                        <h2 class="slider__title title">
+                            Individually designed cake for every occasion
+                        </h2>
+                        <span>From 100$</span>
+                        <button class="btn slider__btn popup-link" href="#call">
+                            Order now
+                        </button>
+                    </div>
+                    <div class="slider__img">
+                        <img src="./img/slider/group_116.png" alt="" />
+                    </div>
+                </div>
+                <div class="slider__block">
+                    <div class="slider__content">
+                        <h2 class="slider__title title">
+                            Individually designed cake for every occasion
+                        </h2>
+                        <span>From 100$</span>
+                        <button class="btn slider__btn popup-link" href="#call">
+                            Order now
+                        </button>
+                    </div>
+                    <div class="slider__img">
+                        <img src="./img/slider/group_116.png" alt="" />
+                    </div>
+                </div>
+                <div class="slider__block">
+                    <div class="slider__content">
+                        <h2 class="slider__title title">
+                            Individually designed cake for every occasion
+                        </h2>
+                        <span>From 100$</span>
+                        <button class="btn slider__btn popup-link" href="#call">
+                            Order now
+                        </button>
+                    </div>
+                    <div class="slider__img">
+                        <img src="./img/slider/group_116.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="cake-collection">
+    <div class="_container">
+        <div class="cake-collection__inner">
+            <h2 class="title cake-collection__title">Cake collection</h2>
+            <p class="text cake-collection__text">
+                In addition to our cake collection we can make every cake you
+                can imagine. Just contact us by e-mail:
+                <a href="mailto:info@pastryworldbakery.com"
+                    >info@pastryworldbakery.com</a
+                >
+                or phone us <a href="tel:+1646-968-0819">+1 646 968 0819</a>
+            </p>
+            <ul class="cake-collection__tabs">
+                <li
+                    class="cake-collection__tabs-item _active icon-3"
+                    data-id="1"
+                >
+                    Regular Cakes
+                </li>
+                <li class="cake-collection__tabs-item icon-4" data-id="2">
+                    Custom Cakes
+                </li>
+                <li class="cake-collection__tabs-item icon-5" data-id="3">
+                    Exlusive Cakes
+                </li>
+                <li class="cake-collection__tabs-item icon-6" data-id="4">
+                    Pastries & Desserts
+                </li>
+            </ul>
+            <div class="cake-collection__columns _active" data-id="1">
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/1.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Red Velvet cake</span
+                            >
+                            <span class="cake-collection__item-text">40$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/2.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Vanilla cake</span
+                            >
+                            <span class="cake-collection__item-text">35$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/3.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Chocolate cake</span
+                            >
+                            <span class="cake-collection__item-text">50$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item-last">
+                    <a
+                        href="./cake-gallery.html"
+                        class="cake-collection__item-last-link"
+                        >View all</a
+                    >
+                </div>
+            </div>
+            <div class="cake-collection__columns" data-id="2">
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/4.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Red Velvet cake</span
+                            >
+                            <span class="cake-collection__item-text">40$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/5.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Vanilla cake</span
+                            >
+                            <span class="cake-collection__item-text">35$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/6.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Chocolate cake</span
+                            >
+                            <span class="cake-collection__item-text">50$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item-last">
+                    <a
+                        href="./cake-gallery.html"
+                        class="cake-collection__item-last-link"
+                        >View all</a
+                    >
+                </div>
+            </div>
+            <div class="cake-collection__columns" data-id="3">
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/7.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Red Velvet cake</span
+                            >
+                            <span class="cake-collection__item-text">40$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link icon-15"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/8.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Vanilla cake</span
+                            >
+                            <span class="cake-collection__item-text">35$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link icon-15"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/9.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Chocolate cake</span
+                            >
+                            <span class="cake-collection__item-text">50$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link icon-15"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item-last">
+                    <a
+                        href="./cake-gallery.html"
+                        class="cake-collection__item-last-link"
+                        >View all</a
+                    >
+                </div>
+            </div>
+            <div class="cake-collection__columns" data-id="4">
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/10.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Red Velvet cake</span
+                            >
+                            <span class="cake-collection__item-text">40$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link icon-15"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/11.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Vanilla cake</span
+                            >
+                            <span class="cake-collection__item-text">35$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link icon-15"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/cake-collection/12.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Chocolate cake</span
+                            >
+                            <span class="cake-collection__item-text">50$</span>
+                        </div>
+                        <a
+                            href="./cake-gallery.html"
+                            class="cake-collection__item-link icon-15"
+                            >Learn more</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item-last">
+                    <a
+                        href="./cake-gallery.html"
+                        class="cake-collection__item-last-link"
+                        >View all</a
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="bestsellers">
+    <div class="_container">
+        <div class="bestsellers__inner">
+            <h2 class="title bestsellers__title">Bestsellers</h2>
+            <div class="cake-collection__columns bestsellers__columns">
+                <div class="cake-collection__item bestsellers__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/bestsellers/4.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Pink with macarons mix</span
+                            >
+                            <span class="cake-collection__item-text">130$</span>
+                        </div>
+                        <a
+                            href="cake-info.html"
+                            class="cake-collection__item-link"
+                            >Open</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item bestsellers__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/bestsellers/5.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Donut cake 30</span
+                            >
+                            <span class="cake-collection__item-text">143$</span>
+                        </div>
+                        <a
+                            href="cake-info.html"
+                            class="cake-collection__item-link"
+                            >Open</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item bestsellers__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/bestsellers/6.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Donut cake 30</span
+                            >
+                            <span class="cake-collection__item-text">143$</span>
+                        </div>
+                        <a
+                            href="cake-info.html"
+                            class="cake-collection__item-link"
+                            >Open</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item bestsellers__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/bestsellers/7.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Donut cake 30</span
+                            >
+                            <span class="cake-collection__item-text">143$</span>
+                        </div>
+                        <a
+                            href="cake-info.html"
+                            class="cake-collection__item-link"
+                            >Open</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item bestsellers__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/bestsellers/8.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Pink with macarons mix</span
+                            >
+                            <span class="cake-collection__item-text">130$</span>
+                        </div>
+                        <a
+                            href="cake-info.html"
+                            class="cake-collection__item-link"
+                            >Open</a
+                        >
+                    </div>
+                </div>
+                <div class="cake-collection__item bestsellers__item">
+                    <img
+                        class="cake-collection__item-img"
+                        src="./img/bestsellers/9.jpg"
+                        alt=""
+                    />
+                    <div class="cake-collection__item-content">
+                        <div class="cake-collection__item-block">
+                            <span class="cake-collection__item-title"
+                                >Donut cake 30</span
+                            >
+                            <span class="cake-collection__item-text">143$</span>
+                        </div>
+                        <a
+                            href="cake-info.html"
+                            class="cake-collection__item-link"
+                            >Open</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="bakery-team" id="bakery-team">
+    <div class="_container bakery-team__container">
+        <div class="bakery-team__inner">
+            <div class="bakery-team__slider">
+                <div class="bakery-team__item">
+                    <img src="./img/bakery-team/1.jpg" alt="" />
+                    <div class="bakery-team__item-content">
+                        <p class="bakery-team__item-title">Vladimir Daragan</p>
+                        <span>Head & pastry chef</span>
+                    </div>
+                </div>
+                <div class="bakery-team__item">
+                    <img src="./img/bakery-team/1.jpg" alt="" />
+                    <div class="bakery-team__item-content">
+                        <p class="bakery-team__item-title">Vladimir Daragan</p>
+                        <span>Head & pastry chef</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bakery-team__content">
+                <h2 class="title bakery-team__content-title">Bakery team</h2>
+                <span>We love Pastry Art! We love doing cakes!</span>
+                <p class="text">
+                    Over the last 15 years our brilliant team have designed
+                    thousands unique cakes! We know everything about taste,
+                    texture and style. We do show-cakes, birthday cakes, wedding
+                    cakes, cakes for anniversary, gender reveal cakes, corporate
+                    cakes, any other cake you can imagine.
+                </p>
+                <p class="text">
+                    We can make an exclusive cake for you, or you can choose a
+                    cake from our catalogue, even find something interesting in
+                    our blog.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <div class="block">
+                    <section class="address" id="address">
+    <div id="map" class="address__bakery _active" data-id="1">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.9801323162656!2d-73.96289948467492!3d40.58619395323947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2445d9e209779%3A0x3745a21bbc6defb2!2zMjg3MiBDb25leSBJc2xhbmQgQXZlLCBCcm9va2x5biwgTlkgMTEyMzUsINCh0KjQkA!5e0!3m2!1sru!2sru!4v1625040406420!5m2!1sru!2sru"
+            width="100%"
+            height="736"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+        ></iframe>
+    </div>
+    <div id="map2" class="address__bakery" data-id="2">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.117367798483!2d-73.98701168467261!3d40.67138284803654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25afe75eff591%3A0xe4a9de8477e5644d!2zMzc0IDV0aCBBdmUsIEJyb29rbHluLCBOWSAxMTIxNSwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1625054282828!5m2!1sru!2sru"
+            width="100%"
+            height="736"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+        ></iframe>
+    </div>
+    <div class="address__inner">
+        <span class="address__block2"></span>
+        <div class="address__tab _active" data-id="1">
+            <h3 class="address__tab-title">Main Bakery</h3>
+            <p class="address__tab-text text icon-7">
+                2872 Coney Island ave Brooklyn, New York
+            </p>
+            <div class="address__block">
+                <div>
+                    <p class="address__block-title icon-8">
+                        Tue, Fri, Sat & Thu:
+                    </p>
+                    <p class="address__tab-text text">08:00 AM - 09:00 PM</p>
+                </div>
+                <div>
+                    <p class="address__block-title">Sun - Mon:</p>
+                    <p class="address__tab-text text address__tab-text_close">
+                        Closed
+                    </p>
+                </div>
+            </div>
+            <a class="address__tab-text text icon-9" href="tel:+1646-968-0819"
+                >+1 (646) 968-0819</a
+            >
+        </div>
+        <div class="address__tab" data-id="2">
+            <h3 class="address__tab-title">New Bakery</h3>
+            <p class="address__tab-text text icon-7">
+                374 5 Avenue, 11215, Brooklyn, New York
+            </p>
+            <div class="address__block">
+                <div>
+                    <p class="address__block-title icon-8">
+                        Tue, Thu, Fri, Sat & Sun:
+                    </p>
+                    <p class="address__tab-text text">08:00 AM - 08:00 PM</p>
+                </div>
+                <div>
+                    <p class="address__block-title"></p>
+                    <p class="address__tab-text text"></p>
+                </div>
+            </div>
+            <a class="address__tab-text text icon-9" href="tel:+1646-968-0819"
+                >+1 (646) 968-0819</a
+            >
+        </div>
+    </div>
+</section>
+
+                    <footer>
+                        <div class="footer">
+    <div class="_container">
+        <div class="footer__inner">
+            <div class="footer__column">
+                <span class="footer__column-title">Menu</span>
+                <ul class="footer__column-list">
+                    <li class="footer__column-item">
+                        <a class="text" href="/">Home</a>
+                    </li>
+                    <li class="footer__column-item">
+                        <a class="text" href="/#bakery-team">About</a>
+                    </li>
+                    <li class="footer__column-item">
+                        <a class="text" href="./cake-gallery.html"
+                            >Cake gallery</a
+                        >
+                    </li>
+                    <li class="footer__column-item">
+                        <a class="text" href="./form.html">Vacancy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <span class="footer__column-title">Cake gallery</span>
+                <ul class="footer__column-list">
+                    <li class="footer__column-item">
+                        <a class="text" href="./cake-gallery.html"
+                            >Custom cakes</a
+                        >
+                    </li>
+                    <li class="footer__column-item">
+                        <a class="text" href="./cake-gallery.html"
+                            >Exclusive cakes</a
+                        >
+                    </li>
+                    <li class="footer__column-item">
+                        <a class="text" href="./cake-gallery.html"
+                            >Pastries & Deserts</a
+                        >
+                    </li>
+                    <li class="footer__column-item">
+                        <a class="text" href="./cake-gallery.html">Deserts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <span class="footer__column-title">Contacts</span>
+                <ul class="footer__column-list">
+                    <li class="footer__column-item">
+                        <a class="text icon-9" href="tel:+1646-968-0819"
+                            >+1 (646) 968-0819</a
+                        >
+                    </li>
+                    <li class="footer__column-item">
+                        <a
+                            class="text footer__column-mail"
+                            href="mailto:info@pastryworldbakery.com"
+                            >info@pastryworldbakery.com</a
+                        >
+                    </li>
+                    <li class="footer__column-item footer__column-item_socials">
+                        <a href="#" class="icon-10"></a
+                        ><a href="#" class="icon-11"></a
+                        ><a href="#" class="icon-12"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <div class="copyright">
+    <div class="_container">
+        <span class="copyright__text">© 2021 Pasty World Bakery</span>
+        <div class="copyright__socials">
+            <a href="#" class="icon-10"></a><a href="#" class="icon-11"></a
+            ><a href="#" class="icon-12"></a>
+        </div>
+    </div>
+</div>
+
+                    </footer>
+                </div>
+            </main>
+        </div>
+        <div id="call" class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <span class="popup__close close-popup"></span>
+            <div class="call__form">
+                <h2 class="call__form-title">Cake in one click</h2>
+                <p class="call__form-text">
+                    It is enough to indicate your phone number or e-mail and we
+                    will contact you!
+                </p>
+                <form action="#" method="post">
+                    <input
+                        class="call__form-inp"
+                        type="text"
+                        name="name"
+                        required
+                        placeholder="Name"
+                    />
+                    <input
+                        class="call__form-inp"
+                        type="tel"
+                        name="Phone"
+                        required
+                        placeholder="Phone"
+                    />
+                    <input
+                        class="call__form-inp"
+                        type="email"
+                        name="Email"
+                        required
+                        placeholder="Email"
+                    />
+                    <button class="btn call__form-btn" type="submit">
+                        Send
+                    </button>
+                </form>
+                <p class="call__form-subtext">
+                    By clicking on the button, you consent to the processing of
+                    your <a href="#">personal data</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAP173pUnToUa52Wanr3V5I2cOQ9uE-fjs"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/popups.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
